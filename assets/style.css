@@ -11,6 +11,12 @@ body{
     background: #0e0029;;
 }
 
+h1{
+    text-align: center;
+    color: rgb(190, 190, 192);
+    padding-top: 30px;
+}
+
 .container{
     position: absolute;
     top: 50%;
@@ -45,7 +51,7 @@ body{
 .container label{
     position: absolute;
     top: 44%;
-    left: 35%;
+    left: 30%;
     transform: translate(-50%,-50%);
     font-size: 1.2rem;
     font-weight: 500;
@@ -54,7 +60,7 @@ body{
 
 .container #qrText:focus + .placeholder{
     top: 38%;
-    left: 25%;
+    left: 22%;
     font-size: 0.6rem;
     color: black;
 }
@@ -117,5 +123,26 @@ body{
     }
     100%{
         transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width:500px){
+
+    h1{
+        font-size: 1.5rem;
+        padding-top: 50px;
+    }
+    
+    .container{
+        width: 350px;
+    }
+
+    .container label{
+        left: 34%;
+    }
+    
+    .container #qrText:focus + .placeholder{
+        top: 37%;
+        left: 25%;
     }
 }
